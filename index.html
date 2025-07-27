@@ -101,10 +101,11 @@
 
         .slide li {
             font-size: 1.1rem;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             padding-left: 30px;
             position: relative;
             color: #2d3748;
+            line-height: 1.6;
         }
 
         .slide li:before {
@@ -114,6 +115,26 @@
             color: #fbbf24;
             font-weight: bold;
             font-size: 1.5rem;
+        }
+
+        .simple-points {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .simple-point {
+            background: #f8fafc;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #fbbf24;
+        }
+
+        .simple-point p {
+            color: #2d3748;
+            margin: 0;
+            font-size: 1.1rem;
         }
 
         .highlight-box {
@@ -229,31 +250,6 @@
             color: #2d3748;
         }
 
-        .deliverables-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin: 30px 0;
-        }
-
-        .deliverable {
-            background: #f8fafc;
-            padding: 25px;
-            border-radius: 10px;
-            border-left: 4px solid #fbbf24;
-        }
-
-        .deliverable h4 {
-            color: #1e3a8a;
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-
-        .deliverable p {
-            color: #2d3748;
-        }
-
         .free-badge {
             background: #dc2626;
             color: white;
@@ -272,7 +268,7 @@
             .title-slide h1 {
                 font-size: 2.5rem;
             }
-            .three-pillars, .deliverables-grid {
+            .three-pillars {
                 grid-template-columns: 1fr;
             }
         }
@@ -293,15 +289,22 @@
             <h2>Free Business Assessment</h2>
             <p>Start your journey with a comprehensive, no-obligation business assessment designed to identify opportunities and unlock your growth potential.</p>
             
-            <div class="highlight-box">
-                <h3>What's Included:</h3>
-                <ul>
-                    <li>90-120 minute mind map strategy session to analyse and understand your business</li>
-                    <li>Management team members welcome to join the session</li>
-                    <li>Comprehensive review of your existing finance data and plans</li>
-                    <li>Detailed business analysis with actionable recommendations</li>
-                    <li>Initial 90-day roadmap and implementation plan</li>
-                </ul>
+            <div class="simple-points">
+                <div class="simple-point">
+                    <p>90-120 minute mind map strategy session to analyse and understand your business</p>
+                </div>
+                <div class="simple-point">
+                    <p>Management team members welcome to join the session</p>
+                </div>
+                <div class="simple-point">
+                    <p>Comprehensive review of your existing finance data and plans</p>
+                </div>
+                <div class="simple-point">
+                    <p>Detailed business analysis explaining what I would do to help</p>
+                </div>
+                <div class="simple-point">
+                    <p>Initial 90-day roadmap and implementation plan</p>
+                </div>
             </div>
 
             <div class="value-prop">
@@ -313,7 +316,7 @@
         <!-- Pricing Slide -->
         <div class="slide">
             <h2>Flexible Pricing Structure</h2>
-            <p>We believe in providing exceptional value whilst building long-term partnerships with growing businesses.</p>
+            <p>I want businesses to feel like they are getting good value for money. At this point I'm building my client base and I'm willing to be more flexible on pricing.</p>
 
             <div class="pricing-box">
                 <h3>Current Offer</h3>
@@ -325,39 +328,33 @@
             </div>
 
             <div class="highlight-box">
-                <p><strong>Building Our Client Base:</strong> We're currently offering more flexible pricing as we expand our services. This is an excellent opportunity to access high-quality fractional FD services at exceptional value.</p>
+                <p><strong>If you'd like to move forward, we agree a fee.</strong> This is an excellent opportunity to access high-quality fractional FD services at exceptional value.</p>
             </div>
         </div>
 
-        <!-- Services Overview Slide -->
+        <!-- Deliverables Slide -->
         <div class="slide">
             <h2>Core Deliverables</h2>
-            <p>Comprehensive financial services tailored to your business needs:</p>
+            <p>Comprehensive financial services I typically include:</p>
 
-            <div class="deliverables-grid">
-                <div class="deliverable">
-                    <h4>Forecasting & Analysis</h4>
-                    <p>Detailed financial forecasting including regular review of forecast to actuals</p>
+            <div class="simple-points">
+                <div class="simple-point">
+                    <p><strong>Forecasting</strong> - Including review of forecast to actuals</p>
                 </div>
-                <div class="deliverable">
-                    <h4>Cash Flow Management</h4>
-                    <p>Comprehensive cash flow forecasting to ensure healthy liquidity</p>
+                <div class="simple-point">
+                    <p><strong>Cash Flow Forecasting</strong> - Comprehensive cash flow management</p>
                 </div>
-                <div class="deliverable">
-                    <h4>Budgeting</h4>
-                    <p>Strategic budget development and ongoing management</p>
+                <div class="simple-point">
+                    <p><strong>Budgets</strong> - Strategic budget development and ongoing management</p>
                 </div>
-                <div class="deliverable">
-                    <h4>Metrics & KPIs</h4>
-                    <p>Analysis and dashboard creation for company-wide performance metrics</p>
+                <div class="simple-point">
+                    <p><strong>Metrics and KPIs Analysis</strong> - Dashboard creation including broad metrics reviewed across the company by all functions</p>
                 </div>
-                <div class="deliverable">
-                    <h4>Unit Economics</h4>
-                    <p>Deep dive analysis to understand the profitability of your offerings</p>
+                <div class="simple-point">
+                    <p><strong>Unit Economics</strong> - Understanding the profitability of your offerings</p>
                 </div>
-                <div class="deliverable">
-                    <h4>Monthly Board Pack</h4>
-                    <p>Professional board reporting with custom finance analysis and commentary</p>
+                <div class="simple-point">
+                    <p><strong>Monthly Board Pack</strong> - Professional board reporting with custom analysis</p>
                 </div>
             </div>
         </div>
@@ -365,40 +362,39 @@
         <!-- Business Strategy Slide -->
         <div class="slide">
             <h2>Telling Your Business Story</h2>
-            <p>Our approach provides a complete narrative of your business performance and potential:</p>
+            <p>This approach tells the story of your business by:</p>
 
             <div class="three-pillars">
                 <div class="pillar">
                     <h4>Analysing the Past</h4>
-                    <p>Determine financial performance, margins, and identify key risk and opportunity areas through comprehensive historical analysis</p>
+                    <p>Determine the financial performance, margins and key risk and opportunity areas</p>
                 </div>
                 <div class="pillar">
                     <h4>Controlling the Present</h4>
-                    <p>Implement robust budgeting, cash flow forecasting, and monthly reporting systems for current operational excellence</p>
+                    <p>Budgeting, cash flow forecasting and monthly reporting</p>
                 </div>
                 <div class="pillar">
                     <h4>Defining the Future</h4>
-                    <p>Develop strategic financial forecasting and business strategy to drive sustainable growth and success</p>
+                    <p>Financial forecasting and business strategy</p>
                 </div>
             </div>
         </div>
 
         <!-- Value Proposition Slide -->
         <div class="slide">
-            <h2>The Value You'll Receive</h2>
+            <h2>The Value You Will Get</h2>
             
-            <div class="value-prop">
-                <h3>Strategic Growth Support</h3>
-                <p>Gain the ability to scale effectively with dedicated support during critical growth phases</p>
+            <div class="simple-points">
+                <div class="simple-point">
+                    <p><strong>Scale Support</strong> - The ability to scale and more support during critical growth phases</p>
+                </div>
+                <div class="simple-point">
+                    <p><strong>Fresh Perspective</strong> - A fresh perspective to your board meeting to provide strategy and troubleshoot problems</p>
+                </div>
+                <div class="simple-point">
+                    <p><strong>Monthly Board Pack</strong> - A monthly board pack with custom finance analysis and commentary</p>
+                </div>
             </div>
-
-            <ul>
-                <li>Fresh perspective for your board meetings with strategic insights and problem-solving expertise</li>
-                <li>Monthly board pack featuring custom finance analysis and detailed commentary</li>
-                <li>Professional financial leadership without the overhead of a full-time hire</li>
-                <li>Flexible engagement model that scales with your business needs</li>
-                <li>Access to senior-level financial expertise and strategic thinking</li>
-            </ul>
 
             <div class="highlight-box">
                 <p><strong>Perfect for businesses that need:</strong> Strategic financial guidance, improved financial reporting, cash flow management, and board-level financial insights to support growth and decision-making.</p>
@@ -411,7 +407,7 @@
             <p style="font-size: 1.4rem; margin-bottom: 40px;">Begin with your complimentary business assessment</p>
             
             <div class="contact-info">
-                <p>Contact us to book your appointment:</p>
+                <p>Contact Kirsten to book your appointment:</p>
                 <p style="font-size: 2.2rem; margin: 30px 0;">kirsten@saas-scaler.com</p>
             </div>
 
