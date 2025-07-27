@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS Scaler - Fractional Finance Director Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e40af 0%, #fbbf24 100%);
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        .presentation {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .slide {
+            min-height: 100vh;
+            padding: 80px 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            border-bottom: 2px solid #f3f4f6;
+        }
+
+        .slide:last-child {
+            border-bottom: none;
+        }
+
+        /* Title Slide */
+        .title-slide {
+            background: linear-gradient(135deg, #1e40af 0%, #1d4ed8 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .title-slide h1 {
+            font-size: 4.5rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+            color: white;
+        }
+
+        .title-slide .subtitle {
+            font-size: 2rem;
+            margin-bottom: 50px;
+            color: #fbbf24;
+            font-weight: 600;
+        }
+
+        .title-slide .tagline {
+            font-size: 1.4rem;
+            background: rgba(251, 191, 36, 0.25);
+            padding: 25px 50px;
+            border-radius: 50px;
+            display: inline-block;
+            border: 3px solid #fbbf24;
+            color: white;
+            font-weight: 500;
+        }
+
+        /* Content Slides */
+        .slide h2 {
+            font-size: 3rem;
+            color: #1e40af;
+            margin-bottom: 50px;
+            border-bottom: 5px solid #fbbf24;
+            padding-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .slide h3 {
+            font-size: 2rem;
+            color: #1e40af;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .slide p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            color: #374151;
+            font-weight: 400;
+        }
+
+        .slide ul {
+            list-style: none;
+            margin-bottom: 40px;
+        }
+
+        .slide li {
+            font-size: 1.2rem;
+            margin-bottom: 18px;
+            padding-left: 35px;
+            position: relative;
+            color: #1f2937;
+            font-weight: 400;
+        }
+
+        .slide li:before {
+            content: "â";
+            position: absolute;
+            left: 0;
+            color: #fbbf24;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            padding: 40px;
+            border-radius: 20px;
+            border-left: 8px solid #1e40af;
+            margin: 40px 0;
+            color: #1f2937;
+        }
+
+        .highlight-box h3 {
+            color: #1e40af;
+            margin-bottom: 25px;
+        }
+
+        .value-prop {
+            background: linear-gradient(135deg, #1e40af 0%, #1d4ed8 100%);
+            color: white;
+            padding: 50px;
+            border-radius: 25px;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .value-prop h3 {
+            color: #fbbf24;
+            font-size: 2.2rem;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .value-prop p {
+            color: white;
+            font-size: 1.3rem;
+        }
+
+        .pricing-box {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            color: #1e40af;
+            padding: 50px;
+            border-radius: 25px;
+            text-align: center;
+            margin: 40px 0;
+            font-weight: 600;
+        }
+
+        .pricing-box h3 {
+            color: #1e40af;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        .pricing-box .price {
+            font-size: 3.5rem;
+            margin: 25px 0;
+            font-weight: 700;
+            color: #1e40af;
+        }
+
+        .pricing-box .discount {
+            font-size: 2.2rem;
+            color: #dc2626;
+            text-decoration: line-through;
+            font-weight: 500;
+        }
+
+        .pricing-box p {
+            color: #1e40af;
+            font-size: 1.2rem;
+        }
+
+        .contact-slide {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            color: #1e40af;
+            text-align: center;
+        }
+
+        .contact-slide h2 {
+            color: #1e40af;
+            font-size: 3.5rem;
+            border-bottom: 5px solid #1e40af;
+        }
+
+        .contact-slide p {
+            color: #1e40af;
+            font-weight: 500;
+        }
+
+        .contact-info {
+            font-size: 2rem;
+            margin: 50px 0;
+            padding: 40px;
+            background: rgba(255,255,255,0.95);
+            border-radius: 20px;
+            font-weight: 700;
+            color: #1e40af;
+        }
+
+        .three-pillars {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+            margin: 40px 0;
+        }
+
+        .pillar {
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            border-radius: 20px;
+            border-top: 6px solid #1e40af;
+        }
+
+        .pillar h4 {
+            color: #1e40af;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .pillar p {
+            font-size: 1.1rem;
+            color: #374151;
+            font-weight: 400;
+        }
+
+        .deliverables-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .deliverable {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            padding: 35px;
+            border-radius: 15px;
+            border-left: 6px solid #fbbf24;
+        }
+
+        .deliverable h4 {
+            color: #1e40af;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .deliverable p {
+            color: #374151;
+            font-size: 1.1rem;
+            margin-bottom: 0;
+        }
+
+        .free-badge {
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 768px) {
+            .slide {
+                padding: 50px 30px;
+            }
+            .title-slide h1 {
+                font-size: 3rem;
+            }
+            .slide h2 {
+                font-size: 2.2rem;
+            }
+            .three-pillars, .deliverables-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="presentation">
+        <!-- Title Slide -->
+        <div class="slide title-slide">
+            <h1>SaaS Scaler</h1>
+            <div class="subtitle">Fractional Finance Director Services</div>
+            <div class="tagline">Strategic Financial Leadership for Growing Businesses</div>
+        </div>
+
+        <!-- Free Assessment Slide -->
+        <div class="slide">
+            <div class="free-badge">COMPLIMENTARY OFFER</div>
+            <h2>Free Business Assessment</h2>
+            <p>Start your journey with a comprehensive, no-obligation business assessment designed to identify opportunities and unlock your growth potential.</p>
+            
+            <div class="highlight-box">
+                <h3>What's Included:</h3>
+                <ul>
+                    <li>We host a 90-120 minute mind map strategy session to analyse and understand your business. Other members of management are welcome to join too</li>
+                    <li>We review your existing finance data and plans</li>
+                    <li>We write a business analysis explaining what we would do to help, including an initial 90-day roadmap and implementation plan</li>
+                </ul>
+            </div>
+
+            <div class="value-prop">
+                <h3>Completely Free of Charge</h3>
+                <p>No strings attached. Get valuable insights into your business with our complimentary assessment. If you'd like to move forward, we agree a fee.</p>
+            </div>
+        </div>
+
+        <!-- Pricing Slide -->
+        <div class="slide">
+            <h2>Flexible Pricing Structure</h2>
+            <p>We want businesses to feel like they are getting good value for money. At this point we're building our client base and we're willing to be more flexible on pricing.</p>
+
+            <div class="pricing-box">
+                <h3>Special Introductory Offer</h3>
+                <div class="price">Â£70 per hour</div>
+                <p>Discounted rate for new clients</p>
+                <p>3-month commitment at this special price</p>
+                <br>
+                <div class="discount">Typical Starting Rate: Â£90/hour</div>
+            </div>
+
+            <div class="highlight-box">
+                <p><strong>Exceptional Value:</strong> This is an excellent opportunity to access high-quality fractional FD services whilst we build our client base. You get senior-level financial expertise at a discounted rate.</p>
+            </div>
+        </div>
+
+        <!-- Services Overview Slide -->
+        <div class="slide">
+            <h2>Core Deliverables</h2>
+            <p>Comprehensive financial services we typically include, tailored to your business needs:</p>
+
+            <div class="deliverables-grid">
+                <div class="deliverable">
+                    <h4>Forecasting & Analysis</h4>
+                    <p>Detailed financial forecasting, including review of forecast to actuals</p>
+                </div>
+                <div class="deliverable">
+                    <h4>Cash Flow Forecasting</h4>
+                    <p>Comprehensive cash flow management to ensure healthy liquidity</p>
+                </div>
+                <div class="deliverable">
+                    <h4>Budgets</h4>
+                    <p>Strategic budget development and ongoing management</p>
+                </div>
+                <div class="deliverable">
+                    <h4>Metrics & KPIs Dashboard</h4>
+                    <p>Analysis and dashboard of broad metrics reviewed across the company by all functions</p>
+                </div>
+                <div class="deliverable">
+                    <h4>Unit Economics</h4>
+                    <p>Deep analysis to understand the profitability of your offerings</p>
+                </div>
+                <div class="deliverable">
+                    <h4>Monthly Board Pack</h4>
+                    <p>Professional board reporting with analysis and commentary</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Business Strategy Slide -->
+        <div class="slide">
+            <h2>Telling Your Business Story</h2>
+            <p>This approach tells the complete story of your business through three key areas:</p>
+
+            <div class="three-pillars">
+                <div class="pillar">
+                    <h4>ð Analysing the Past</h4>
+                    <p>Determine the financial performance, margins and key risk & opportunity areas</p>
+                </div>
+                <div class="pillar">
+                    <h4>ð¯ Controlling the Present</h4>
+                    <p>Budgeting, cash flow forecasting and monthly reporting</p>
+                </div>
+                <div class="pillar">
+                    <h4>ð Defining the Future</h4>
+                    <p>Financial forecasting & business strategy</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Value Proposition Slide -->
+        <div class="slide">
+            <h2>The Value You Will Get</h2>
+            
+            <div class="value-prop">
+                <h3>Strategic Growth Support</h3>
+                <p>Transform your financial management and accelerate your business growth</p>
+            </div>
+
+            <ul>
+                <li>The ability to scale with more support during critical growth phases</li>
+                <li>A fresh perspective to your board meeting to provide strategy and troubleshoot problems</li>
+                <li>A monthly board pack with custom finance analysis and commentary</li>
+                <li>Professional financial leadership without the overhead of a full-time hire</li>
+                <li>Flexible engagement model that scales with your business needs</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><strong>Perfect for businesses that need:</strong> Strategic financial guidance, improved financial reporting, cash flow management, and board-level financial insights to support growth and decision-making.</p>
+            </div>
+        </div>
+
+        <!-- Contact Slide -->
+        <div class="slide contact-slide">
+            <h2>Ready to Get Started?</h2>
+            <p style="font-size: 1.5rem; margin-bottom: 50px;">Begin with your complimentary business assessment</p>
+            
+            <div class="contact-info">
+                <p>Contact to book your appointment:</p>
+                <p style="font-size: 2.5rem; margin: 30px 0;">kirsten@saas-scaler.com</p>
+            </div>
+
+            <p style="font-size: 1.3rem; font-weight: 600;">Transform your financial management and unlock your business potential</p>
+        </div>
+    </div>
+</body>
+</html>
