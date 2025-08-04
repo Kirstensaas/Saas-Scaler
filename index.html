@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SaaS Scaler - Fractional Finance Director Services</title>
+    <title>SaaS Scaler - Complete Outsourced Accounting for SaaS Companies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -41,34 +42,49 @@
 
         /* Title Slide */
         .title-slide {
-            background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 100%);
-            color: white;
+            background: white;
+            color: #1e3a8a;
             text-align: center;
         }
 
         .title-slide h1 {
+            font-family: 'Montserrat', sans-serif;
             font-size: 4rem;
-            font-weight: bold;
+            font-weight: 700;
             margin-bottom: 30px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            color: white;
+            color: #1e3a8a;
+            text-shadow: 
+                2px 2px 0 #fbbf24,
+                2px 0 0 #fbbf24,
+                0 2px 0 #fbbf24;
+            letter-spacing: 1px;
         }
 
         .title-slide .subtitle {
             font-size: 1.8rem;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             opacity: 0.95;
-            color: white;
+            color: #1e3a8a;
+            font-weight: bold;
+        }
+
+        .title-slide .description {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            color: #1e3a8a;
+            font-weight: bold;
         }
 
         .title-slide .tagline {
             font-size: 1.2rem;
-            background: rgba(251, 191, 36, 0.2);
+            background: rgba(30, 58, 138, 0.1);
             padding: 20px 40px;
             border-radius: 50px;
             display: inline-block;
-            border: 2px solid #fbbf24;
-            color: white;
+            border: 2px solid #1e3a8a;
+            color: #1e3a8a;
+            font-weight: bold;
         }
 
         /* Content Slides */
@@ -130,111 +146,92 @@
             color: white;
         }
 
-        .pricing-box {
-            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
-            color: #1e3a8a;
-            padding: 40px;
-            border-radius: 20px;
-            text-align: center;
-            margin: 30px 0;
-            font-weight: bold;
-        }
-
-        .pricing-box h3 {
-            color: #1e3a8a;
-        }
-
-        .pricing-box p {
-            color: #1e3a8a;
-        }
-
-        .pricing-box .price {
-            font-size: 3rem;
-            margin: 20px 0;
-            color: #1e3a8a;
-        }
-
-        .pricing-box .discount {
-            font-size: 2rem;
-            color: #dc2626;
-            text-decoration: line-through;
-        }
-
-        .contact-slide {
-            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
-            color: #1e3a8a;
-            text-align: center;
-        }
-
-        .contact-slide h2 {
-            color: #1e3a8a;
-            font-size: 3rem;
-        }
-
-        .contact-slide p {
-            color: #1e3a8a;
-        }
-
-        .contact-info {
-            font-size: 1.8rem;
-            margin: 40px 0;
-            padding: 30px;
-            background: rgba(255,255,255,0.9);
-            border-radius: 15px;
-            font-weight: bold;
-            color: #1e3a8a;
-        }
-
-        .three-pillars {
+        .pricing-grid {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 30px;
             margin: 30px 0;
         }
 
-        .pillar {
-            text-align: center;
-            padding: 30px;
+        .pricing-tier {
             background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            padding: 30px;
             border-radius: 15px;
             border-top: 5px solid #1e3a8a;
+            text-align: center;
         }
 
-        .pillar h4 {
+        .pricing-tier h4 {
             color: #1e3a8a;
-            font-size: 1.4rem;
+            font-size: 1.8rem;
             margin-bottom: 15px;
             font-weight: bold;
         }
 
-        .pillar p {
-            font-size: 1rem;
-            color: #2d3748;
+        .pricing-tier .price {
+            color: #fbbf24;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 20px 0;
         }
 
-        .deliverables-grid {
+        .pricing-tier p {
+            color: #2d3748;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .contact-slide {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .contact-slide h2 {
+            color: #fbbf24;
+            font-size: 3rem;
+        }
+
+        .contact-slide p {
+            color: white;
+        }
+
+        .contact-info {
+            font-size: 1.8rem;
+            margin: 40px 0;
+            padding: 30px;
+            background: rgba(251, 191, 36, 0.2);
+            border-radius: 15px;
+            font-weight: bold;
+            color: white;
+            border: 2px solid #fbbf24;
+        }
+
+        .services-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
             gap: 20px;
             margin: 30px 0;
         }
 
-        .deliverable {
+        .service {
             background: #f8fafc;
             padding: 25px;
             border-radius: 10px;
             border-left: 4px solid #fbbf24;
+            text-align: center;
         }
 
-        .deliverable h4 {
+        .service h4 {
             color: #1e3a8a;
             font-size: 1.2rem;
             margin-bottom: 10px;
             font-weight: 600;
         }
 
-        .deliverable p {
+        .service p {
             color: #2d3748;
+            font-size: 1rem;
         }
 
         .simple-point {
@@ -247,8 +244,62 @@
             font-size: 1.1rem;
         }
 
+        .founder-section {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin: 30px 0;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .founder-content {
+            flex: 1;
+        }
+
+        .founder-image {
+            flex-shrink: 0;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid #fbbf24;
+            object-fit: cover;
+            background: rgba(251, 191, 36, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            text-align: center;
+            color: #fbbf24;
+        }
+
+        .founder-section h3 {
+            color: #fbbf24;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .founder-section p {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .founder-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .founder-image {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
         .free-badge {
-            background: #dc2626;
+            background: #f59e0b;
             color: white;
             padding: 10px 20px;
             border-radius: 25px;
@@ -265,7 +316,7 @@
             .title-slide h1 {
                 font-size: 2.5rem;
             }
-            .three-pillars, .deliverables-grid {
+            .services-grid, .pricing-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -276,8 +327,83 @@
         <!-- Title Slide -->
         <div class="slide title-slide">
             <h1>SaaS Scaler</h1>
-            <div class="subtitle">Fractional Finance Director Services</div>
-            <div class="tagline">Strategic Financial Leadership for Growing Businesses</div>
+            <div class="subtitle">Complete Outsourced Accounting for SaaS and Recurring Revenue Companies</div>
+            <div class="description">Reporting, compliance, payroll, metrics, forecasting, and tech integration</div>
+            <div class="tagline">Laying the foundations for better data and smarter decisions</div>
+        </div>
+
+        <!-- Mission Statement Slide -->
+        <div class="slide">
+            <h2>SaaS Success Through Sound Financial Intelligence</h2>
+            <p>SaaS success hinges on sound financial intelligence. Get your accounting foundations right, and you'll unlock valuable strategic insights that drive smarter business decisions.</p>
+            
+            <div class="value-prop">
+                <h3>Our Mission</h3>
+                <p>We specialise in setting up early-stage and growing SaaS businesses for success, preventing the costly headaches that come from tangled data and processes.</p>
+            </div>
+
+            <div class="highlight-box">
+                <p>Too many companies get themselves in a mess with poor financial foundations, creating costly problems that take months to sort out. We're here to prevent that from happening to your business.</p>
+            </div>
+        </div>
+
+        <!-- About Us Slide -->
+        <div class="slide">
+            <h2>About Us</h2>
+            
+            <div class="founder-section">
+                <div class="founder-content">
+                    <h3>Kirsten Munn, Founder and Fractional Finance Director</h3>
+                    <p>Kirsten is on a mission to set early-stage and growing SaaS businesses up for success. She thrives on getting to grips with her clients' businesses, identifying the key revenue, profit and cash drivers, and understanding what makes them tick.</p>
+                    
+                    <p>By embedding herself in the business, she is able to spot opportunities for process and systems improvements that deliver genuine value.</p>
+                </div>
+                <div class="founder-image">
+                    <!-- Replace this with: <img src="path-to-kirsten-photo.jpg" alt="Kirsten Munn" class="founder-image"> -->
+                    Add Kirsten's Photo Here
+                </div>
+            </div>
+
+            <div class="simple-point">
+                Over 11 years of Big 4 experience across Japan, the US, and the UK, bringing deep technical expertise in accounting, tax, and audit.
+            </div>
+
+            <div class="simple-point">
+                More than 5 years in finance and operations roles within international SaaS companies, diving deep into SaaS metrics whilst streamlining quote-to-cash and procure-to-pay processes.
+            </div>
+        </div>
+
+        <!-- Services Overview Slide -->
+        <div class="slide">
+            <h2>Complete Outsourced Accounting Services</h2>
+            <p>We provide comprehensive financial services specifically tailored for SaaS and recurring revenue businesses:</p>
+
+            <div class="services-grid">
+                <div class="service">
+                    <h4>Reporting</h4>
+                    <p>Professional financial reporting and board packs tailored to SaaS metrics</p>
+                </div>
+                <div class="service">
+                    <h4>Compliance</h4>
+                    <p>Full compliance management including tax, audit, and regulatory requirements</p>
+                </div>
+                <div class="service">
+                    <h4>Payroll</h4>
+                    <p>Complete payroll processing and management</p>
+                </div>
+                <div class="service">
+                    <h4>SaaS Metrics</h4>
+                    <p>Deep dive analysis of key SaaS performance indicators and unit economics</p>
+                </div>
+                <div class="service">
+                    <h4>Forecasting</h4>
+                    <p>Strategic financial forecasting and cash flow management</p>
+                </div>
+                <div class="service">
+                    <h4>Tech Integration</h4>
+                    <p>Seamless integration with your existing tech stack and systems</p>
+                </div>
+            </div>
         </div>
 
         <!-- Free Assessment Slide -->
@@ -310,100 +436,31 @@
 
         <!-- Pricing Slide -->
         <div class="slide">
-            <h2>Flexible Pricing Structure</h2>
-            <p>We believe in providing exceptional value whilst building long-term partnerships with growing businesses.</p>
+            <h2>Our Pricing</h2>
+            <p>We're an extension to your in-house team, tailoring the level of service based on the stage of your business:</p>
 
-            <div class="pricing-box">
-                <h3>Current Offer</h3>
-                <div class="price">&pound;70 / $100 per hour</div>
-                <p>Special introductory rate for new clients</p>
-                <p>3-month commitment at this discounted rate</p>
-                <br>
-                <div class="discount">Standard Rate: &pound;90 / $120 per hour</div>
-            </div>
-
-            <div class="highlight-box">
-                <p><strong>Building Our Client Base:</strong> We're currently offering more flexible pricing as we expand our services. This is an excellent opportunity to access high-quality fractional FD services at exceptional value for money.</p>
-            </div>
-        </div>
-
-        <!-- Services Overview Slide -->
-        <div class="slide">
-            <h2>Core Deliverables</h2>
-            <p>We provide comprehensive financial services tailored to your business needs:</p>
-
-            <div class="deliverables-grid">
-                <div class="deliverable">
-                    <h4>Forecasting & Analysis</h4>
-                    <p>Detailed financial forecasting including regular review of forecast to actuals</p>
+            <div class="pricing-grid">
+                <div class="pricing-tier">
+                    <h4>Start-up</h4>
+                    <div class="price">From &pound;1,000</div>
+                    <p>You are in the early stages of generating revenue and have a minimum viable product.</p>
+                    <p>You're bootstrapped, or you've raised either a pre-seed or seed investment.</p>
+                    <p><strong>Up to 5 on payroll</strong></p>
                 </div>
-                <div class="deliverable">
-                    <h4>Cash Flow Management</h4>
-                    <p>Comprehensive cash flow forecasting to ensure healthy liquidity</p>
+                
+                <div class="pricing-tier">
+                    <h4>Scale-up</h4>
+                    <div class="price">From &pound;2,000</div>
+                    <p>You are thinking about Series A or complexity is increasing and you need more strategic support.</p>
+                    <p><strong>Up to 20 on payroll</strong></p>
                 </div>
-                <div class="deliverable">
-                    <h4>Budgeting</h4>
-                    <p>Strategic budget development and ongoing management</p>
+                
+                <div class="pricing-tier">
+                    <h4>Maximising Growth</h4>
+                    <div class="price">From &pound;3,000</div>
+                    <p>You already have Series A or beyond, and your offering is well established.</p>
+                    <p>You want to maximise the value in the business through a growth strategy and with the goal of exiting.</p>
                 </div>
-                <div class="deliverable">
-                    <h4>Metrics & KPIs</h4>
-                    <p>Analysis and dashboard creation for company-wide performance metrics across all functions</p>
-                </div>
-                <div class="deliverable">
-                    <h4>Unit Economics</h4>
-                    <p>Deep dive analysis to understand the profitability of your offerings</p>
-                </div>
-                <div class="deliverable">
-                    <h4>Monthly Board Pack</h4>
-                    <p>Professional board reporting with custom finance analysis and commentary</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Business Strategy Slide -->
-        <div class="slide">
-            <h2>Telling Your Business Story</h2>
-            <p>Our approach provides a complete narrative of your business performance and potential through three key areas:</p>
-
-            <div class="three-pillars">
-                <div class="pillar">
-                    <h4>Analysing the Past</h4>
-                    <p>We determine financial performance, margins, and identify key risk and opportunity areas through comprehensive historical analysis</p>
-                </div>
-                <div class="pillar">
-                    <h4>Controlling the Present</h4>
-                    <p>We implement robust budgeting, cash flow forecasting, and monthly reporting systems for current operational excellence</p>
-                </div>
-                <div class="pillar">
-                    <h4>Defining the Future</h4>
-                    <p>We develop strategic financial forecasting and business strategy to drive sustainable growth and success</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Value Proposition Slide -->
-        <div class="slide">
-            <h2>The Value You'll Receive</h2>
-            
-            <div class="value-prop">
-                <h3>Strategic Growth Support</h3>
-                <p>Gain the ability to scale effectively with dedicated support during critical growth phases</p>
-            </div>
-
-            <div class="simple-point">
-                We provide a fresh perspective to your board meetings with strategic insights and problem-solving expertise to help troubleshoot challenges.
-            </div>
-
-            <div class="simple-point">
-                You'll receive a monthly board pack featuring custom finance analysis and detailed commentary tailored to your business.
-            </div>
-
-            <div class="simple-point">
-                Access professional financial leadership without the overhead of a full-time hire, with a flexible engagement model that scales with your business needs.
-            </div>
-
-            <div class="highlight-box">
-                <p><strong>Perfect for businesses that need:</strong> Strategic financial guidance, improved financial reporting, cash flow management, and board-level financial insights to support growth and decision-making.</p>
             </div>
         </div>
 
@@ -413,13 +470,13 @@
             <p style="font-size: 1.4rem; margin-bottom: 40px;">Begin with your complimentary business assessment</p>
             
             <div class="contact-info">
-                <p>Contact us to book your appointment:</p>
+                <p>Get in touch via connecting on LinkedIn</p>
+                <p>or by booking a meeting via the Calendly link</p>
                 <p style="font-size: 2.2rem; margin: 30px 0;">kirsten@saas-scaler.com</p>
             </div>
 
-            <p style="font-size: 1.2rem; font-weight: 600;">Transform your financial management and unlock your business potential</p>
+            <p style="font-size: 1.2rem; font-weight: 600;">Transform your SaaS financial management and unlock your business potential</p>
         </div>
     </div>
 </body>
-</html
- 
+</html>
